@@ -1,0 +1,26 @@
+.app-header-container {
+    
+    width: 100%;
+
+    .left {
+        width: 50%;
+        font-size: 25px;
+
+        .x {
+            font-family: 'zenos';
+            font-size: 35px;
+            color: #3cffff;
+            // text-shadow: 3px 3px #00BCD4;
+        }
+    }
+
+    .right {
+        width: 50%;
+        font-size: 16px;
+        justify-content: flex-end;
+
+        svg {
+            font-size: 30px;
+        }
+    }
+}

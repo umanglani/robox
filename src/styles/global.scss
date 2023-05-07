@@ -1,0 +1,161 @@
+@import "./colors.scss";
+
+@font-face {
+    font-family: 'zenos';
+    src: url("../assets/fonts/zenos.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'robo-rev';
+    src: url("../assets/fonts/robo-reavers.ttf") format('truetype');
+}
+
+
+.flex-box-start, .flex-box-center, .flex-box-end {
+    display: flex;
+}
+
+.flex-box-center {
+    justify-content: center;
+}
+
+.flex-box-end {
+    justify-content: flex-end;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.v-center {
+    align-items: center;
+}
+
+.space-even {
+    justify-content: space-evenly;
+}
+
+.grid-2-cols {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
+}
+
+.btn-rect-white, .btn-rect-green {
+    border-radius: 8px;
+    padding: 15px 30px;
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+// remove default css of a tag
+a {
+    outline: none;
+    // pointer-events: none;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+
+    color: inherit;
+
+    &:visited {
+        color: white;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+.font-icon {
+    font-family: 'Material Icons';
+    font-weight: 400;
+    font-style: normal;
+}
+
+// widths
+.full-width {
+    width: 100%;
+}
+
+.enable-hover {
+    cursor: pointer;
+}
+
+.overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.light {
+    font-weight: 200;
+}
+
+.small {
+    font-size: 13px;
+}
+
+.zen {
+    font-family: 'zenos';
+}
+
+.app-title {
+    margin: 0;
+    font-family: 'zenos';
+    font-size: 8rem;
+}
+
+.app-sub-title {
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.less-opacity {
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 400px) and (max-width: 650px) {
+
+    .app-title {
+        font-size: 50px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (min-width: 651px) and (max-width: 900px) {
+
+    .app-title {
+        font-size: 85px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+
+    .app-title {
+        font-size: 100px;
+    }
+
+    body {
+        font-size: 17px;
+    }
+    
+}

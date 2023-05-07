@@ -1,0 +1,53 @@
+@import "../styles/colors.scss";
+
+.dashboard-container {
+    padding: 40px 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    height: 100%;
+
+    .app-header {
+        height: 15%;
+    }
+
+    .row-1 {
+        height: 30%;
+    }
+    .row-2 {
+        height: 35%;
+
+        .x {
+            text-shadow: 3px 3px #00BCD4;
+        }
+    }
+    .row-3 {
+        height: 20%;
+
+        .contact {
+            text-decoration: underline;
+            .zen {
+                color: #3cffff;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 650px) { 
+    .dashboard-container {
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 900px) { 
+    .dashboard-container {
+        padding: 40px 60px;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) { 
+    .dashboard-container {
+        padding: 40px 80px;
+    }
+}
